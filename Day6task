@@ -1,0 +1,245 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using KG College of Arts and Science Mail with screen readers
+
+2 of 458
+Fwd: notes
+Inbox
+
+Nithin Ramasamy
+Attachments
+9:16 AM (13 minutes ago)
+to me
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:52 AM
+Subject: Fwd: notes
+To: <2326ja35@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:48 AM
+Subject: Fwd: notes
+To: <2326ja33@kgcas.com>, <2326ja61@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Vinoth Kumaresan <2326ja57@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:49 AM
+Subject: Fwd: notes
+To: <2326JA34@kgcas.com>, <2326ja56@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Sanjith Araviyndhan <2326jb39@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:34 AM
+Subject: notes
+To: <2326ja57@kgcas.com>
+
+
+
+
+ 16 Attachments
+  •  Scanned by Gmail
+day 6 task
+import java.util.HashSet;
+
+import java.util.Scanner;
+
+
+
+public class UniqueEmailsFixed {
+
+    public static void main(String[] args) {
+
+        HashSet<String> emailSet = new HashSet<>();
+
+        Scanner sc = new Scanner(System.in);
+
+
+
+        System.out.print("How many email addresses you want to enter? ");
+
+        int count = sc.nextInt();
+
+        sc.nextLine();
+
+
+        for (int i = 0; i < count; i++) {
+
+            System.out.print("Enter email " + (i + 1) + ": ");
+
+            String email = sc.nextLine();
+
+
+
+            if (emailSet.add(email)) {
+
+                System.out.println("Email added.");
+
+            } else {
+
+                System.out.println("Duplicate email. Not added.");
+
+            }
+2)
+package coursepack;
+
+
+
+import java.util.HashMap;
+
+import java.util.Scanner;
+
+
+
+public class StudentMarksAverage {
+
+    public static void main(String[] args) {
+
+        HashMap<String, Integer> studentMarks = new HashMap<>();
+
+        Scanner sc = new Scanner(System.in);
+
+
+
+        System.out.print("Enter number of students: ");
+
+        int count = sc.nextInt();
+
+        sc.nextLine();
+
+
+        for (int i = 0; i < count; i++) {
+
+            System.out.print("Enter student name: ");
+
+            String name = sc.nextLine();
+
+
+
+            System.out.print("Enter marks for " + name + ": ");
+
+            int marks = sc.nextInt();
+
+            sc.nextLine(); // consume newline
+
+
+
+            studentMarks.put(name, marks);
+
+        }
+
+
+
+   
+
+        int total = 0;
+
+        for (int marks : studentMarks.values()) {
+
+            total += marks;
+
+        }
+
+
+
+        double average = (double) total / studentMarks.size();
+
+
+
+
+
+        System.out.println("\nStudent Marks:");
+
+        for (String name : studentMarks.keySet()) {
+
+            System.out.println(name + " -> " + studentMarks.get(name));
+
+        }
+
+
+
+        System.out.println("\nAverage Marks: " + average);
+
+
+
+        sc.close();
+
+    }
+
+}
+
+3)
+package coursepack;
+
+
+
+class MyThread extends Thread {
+
+    @Override
+
+    public void run() {
+
+        for (int i = 1; i <= 10; i++) {
+
+            System.out.println("Thread: " + i);
+
+        }
+
+    }
+
+}
+
+
+
+public class threadoh {
+
+    public static void main(String[] args) {
+
+        MyThread thread = new MyThread();
+
+        thread.start();
+
+    }
+
+}
+
+        }
+
+
+
+        System.out.println("\nUnique email addresses:");
+
+        for (String email : emailSet) {
+
+            System.out.println(email);
+
+        }
+
+
+
+        sc.close();
+
+    }
+
+
+
+
+
+
+
+}
+day6task.txt
+Displaying day6task.txt.
