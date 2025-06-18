@@ -1,0 +1,104 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using KG College of Arts and Science Mail with screen readers
+This browser version is no longer supported. Please upgrade to a supported browser.
+
+2 of 458
+Fwd: notes
+Inbox
+
+Nithin Ramasamy
+Attachments
+9:16 AM (11 minutes ago)
+to me
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:52 AM
+Subject: Fwd: notes
+To: <2326ja35@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:48 AM
+Subject: Fwd: notes
+To: <2326ja33@kgcas.com>, <2326ja61@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Vinoth Kumaresan <2326ja57@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:49 AM
+Subject: Fwd: notes
+To: <2326JA34@kgcas.com>, <2326ja56@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Sanjith Araviyndhan <2326jb39@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:34 AM
+Subject: notes
+To: <2326ja57@kgcas.com>
+
+
+
+
+ 16 Attachments
+  •  Scanned by Gmail
+import java.util.Scanner;
+
+class BankAccount {
+    double balance = 0;
+
+    void deposit(double amount) {
+        balance += amount;
+        System.out.println("Deposited: ₹" + amount);
+    }
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn: ₹" + amount);
+        } else {
+            System.out.println("Not enough balance!");
+        }
+    }
+
+    void showBalance() {
+        System.out.println("Balance: ₹" + balance);
+    }
+}
+
+public class Bank {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        BankAccount account = new BankAccount();
+
+        System.out.print("Enter deposit amount: ");
+        double dep = sc.nextDouble();
+        account.deposit(dep);
+
+        System.out.print("Enter withdraw amount: ");
+        double wd = sc.nextDouble();
+        account.withdraw(wd);
+
+        account.showBalance();
+    }
+}
+
+OUTPUT:
+Enter deposit amount: 20000
+Deposited: ₹20000.0
+Enter withdraw amount: 500
+Withdrawn: ₹500.0
+Balance: ₹19500.0
+day3task.txt
+Zoomed out of item.
