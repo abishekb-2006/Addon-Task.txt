@@ -1,0 +1,150 @@
+Conversation opened. 1 read message.
+
+Skip to content
+Using KG College of Arts and Science Mail with screen readers
+
+2 of 458
+Fwd: notes
+Inbox
+
+Nithin Ramasamy
+Attachments
+9:16 AM (13 minutes ago)
+to me
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:52 AM
+Subject: Fwd: notes
+To: <2326ja35@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Nithin Ramasamy <2326ja34@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:48 AM
+Subject: Fwd: notes
+To: <2326ja33@kgcas.com>, <2326ja61@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Vinoth Kumaresan <2326ja57@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:49 AM
+Subject: Fwd: notes
+To: <2326JA34@kgcas.com>, <2326ja56@kgcas.com>
+
+
+
+
+---------- Forwarded message ---------
+From: Sanjith Araviyndhan <2326jb39@kgcas.com>
+Date: Tue, Jun 17, 2025 at 11:34 AM
+Subject: notes
+To: <2326ja57@kgcas.com>
+
+
+
+
+ 16 Attachments
+  •  Scanned by Gmail
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        try {
+            int a = 10 / 0;
+            String str = null;
+            System.out.println(str.length());
+        }
+        catch (ArithmeticException ae) {
+            System.out.println(
+                "Caught ArithmeticException: " + ae);
+        }
+        catch (NullPointerException ae) {
+            System.out.println(
+                "Caught NullPointerException: " + ae);
+        }
+    }
+}
+
+OUTPUT:
+Caught ArithmeticException: java.lang.ArithmeticException: / by zero
+  -----------------------------------------------------------------------
+  package oops.ExceptionHandling;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
+public class SimpleFileReader {
+    public static void main(String[] args) {
+        String filePath = "C:\\Users\\casstudent\\Desktop\\addon java";
+        File file = new File(filePath);
+
+        if (file.exists()) {
+            try {
+                String content = new String(Files.readAllBytes(file.toPath()));
+                System.out.println(content);
+            } catch (IOException e) {
+                System.out.println("Error reading the file.");
+            }
+        } else {
+            System.out.println("File not found: " + filePath);
+        }
+    }
+}
+
+OUTPUT:
+Error reading the file.
+  -----------------------------------------------------------------------------------
+  READ TEXT FILE:
+  package oops.ExceptionHandling;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class FileReader {
+    public static void main(String[] args) {
+        File file = new File("C:\\Users\\casstudent\\eclipse-workspace\\Javaprograms\\src\\oops\\ExceptionHandling\\n.txt");
+
+        try (Scanner reader = new Scanner(file)) {
+            while (reader.hasNextLine()) {
+                System.out.println(reader.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+        }
+    }
+}
+
+OUTPUT:
+hi
+--------------------------------------------------------------------------------------------
+  WRITE TEXT FILE:
+package oops.ExceptionHandling;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterPro {
+    public static void main(String[] args) {
+        try (FileWriter writer = new FileWriter("C:\\Users\\casstudent\\eclipse-workspace\\Javaprograms\\src\\oops\\ExceptionHandling\\n.txt")) {
+            writer.write("Line 1\nLine 2\nLine 3\n");
+            System.out.println("File written successfully.");
+        } catch (IOException e) {
+            System.out.println("Error writing to file.");
+        }
+    }
+}
+
+OUTPUT:
+File written successfully.
+--------------------------------------------------------------------------------------------
+day5task.txt
+Displaying day5task.txt.
